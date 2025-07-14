@@ -1,0 +1,14 @@
+<!-- templates/result.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prediction Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h2>Prediction Result</h2>
+    <p><strong>News:</strong> {{ news }}</p>
+    <h3>{{ result }}</h3>
+    <a href="/">Go Home</a>
+</body>
+</html>
