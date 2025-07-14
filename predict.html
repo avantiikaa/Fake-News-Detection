@@ -1,0 +1,15 @@
+<!-- templates/predict.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Predict News</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h2>Enter News Article Below</h2>
+    <form action="/predict" method="post">
+        <textarea name="news" rows="8" cols="80" required></textarea><br>
+        <button type="submit">Check</button>
+    </form>
+</body>
+</html>
